@@ -1,0 +1,27 @@
+# One-off repair: the first Pages deployment (15c9d85) timed out but GitHub still
+# holds it as "in progress", which blocks every new deployment. This cancels it,
+# then asks GitHub Pages to rebuild from main. Safe to delete once the site is live.
+name: Clear stuck Pages deployment
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/clear-pages-lock.yml']
+permissions:
+  contents: read
+  pages: write
+jobs:
+  clear:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel the stale deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/deployments/15c9d8576290d611ff73d6ca7a43f2f7bf37b0e5/cancel" && echo "cancelled" || echo "cancel call failed (may already be cleared)"
+      - name: Request a fresh Pages build from main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 30
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" && echo "build requested" || echo "build request failed"
