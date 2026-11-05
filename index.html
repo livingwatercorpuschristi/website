@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Living Water Corpus Christi (LWCC) | Clean water systems in Corpus Christi, Texas</title>
+<meta name="description" content="LWCC designs, installs, and services water systems for homes, ranches, and businesses in the Coastal Bend, and runs R&amp;D on more efficient ways to make and treat water.">
+<link rel="canonical" href="https://livingwatercorpuschristi.com/">
+<meta name="theme-color" content="#0E3A47">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Living Water Corpus Christi">
+<meta property="og:title" content="Living Water Corpus Christi (LWCC)">
+<meta property="og:description" content="Clean water systems for Coastal Bend homes and businesses. Make your own water.">
+<meta property="og:url" content="https://livingwatercorpuschristi.com/">
+<meta property="og:image" content="https://livingwatercorpuschristi.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Living Water Corpus Christi logo with the line: Clean water systems for Coastal Bend homes and businesses.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Living Water Corpus Christi, LLC","alternateName":"LWCC","url":"https://livingwatercorpuschristi.com/","logo":"https://livingwatercorpuschristi.com/assets/lwcc-logo.png","slogan":"Make your own water.","foundingDate":"2026","address":{"@type":"PostalAddress","addressLocality":"Corpus Christi","addressRegion":"TX","addressCountry":"US"},"areaServed":"Coastal Bend, Texas"}</script>
+<!--LWCC:HEAD-END-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,500;0,600;1,500&display=swap">
+<style>
+/* Layout: an engineering data sheet. Left-aligned measure on a 1120px frame, Brass hairline rules and a staff-gauge tick strip, page ground matched to the logo's paper tone, one reversed Gulf Deep band for contact. Single light theme by design (brand palette is defined for light). */
+:root{
+  color-scheme: light;
+  --ground:#EFEEEC;    /* page background, matched to LWCC Logo.png */
+  --fog:#F7F6F2;       /* raised surfaces */
+  --bone:#EDE6D6;      /* alternate bands */
+  --mist:#D8E4E6;      /* quiet panels, water */
+  --deep:#0E3A47;      /* Gulf Deep, brand primary */
+  --deep-2:#174B5A;    /* hover on Gulf Deep */
+  --deep-line:#336472; /* rules on Gulf Deep */
+  --current:#2B6B7A;   /* links, labels, secondary actions */
+  --ink:#0F1419;       /* body text */
+  --ink-2:#334049;     /* secondary text */
+  --rule:#C2C8CC;      /* borders, dividers */
+  --brass:#B08968;     /* hairlines only */
+  --on-deep:#F7F6F2;
+  --on-deep-2:#D8E4E6;
+  --serif:"IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --sans:"IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --frame:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1rem/1.625 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,p,figure{margin:0}
+a{color:var(--current);text-underline-offset:3px}
+a:hover{color:var(--deep)}
+:focus-visible{outline:2px solid var(--current);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--frame);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:16px;top:16px;z-index:20;background:var(--deep);color:var(--on-deep);padding:8px 12px}
+
+/* Type */
+h1,h2{font-family:var(--serif);font-weight:500;color:var(--deep);text-wrap:balance}
+h2{font-size:clamp(1.75rem,1.25rem + 1.6vw,2.25rem);line-height:1.22;letter-spacing:-.005em}
+h3{font:600 1.25rem/1.4 var(--sans);color:var(--ink);text-wrap:balance}
+.label{font:500 .8125rem/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--current)}
+.mono-label{font:500 .8125rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.body-l{font-size:1.125rem;line-height:1.556;color:var(--ink-2);max-width:60ch}
+.small{font-size:.875rem;line-height:1.57;color:var(--ink-2)}
+.nowrap{white-space:nowrap}
+
+/* Header */
+.site-header{border-bottom:1px solid var(--rule)}
+.header-row{display:flex;align-items:center;gap:16px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep);margin-right:auto}
+.brand:hover{color:var(--deep)}
+.brand-mark{width:29px;height:40px}
+.brand-text{display:flex;flex-direction:column}
+.brand-short{font:600 1.375rem/1 var(--serif);letter-spacing:.03em}
+.brand-long{font:500 .625rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--current);margin-top:5px}
+.nav{display:flex;gap:28px;margin-right:12px}
+.nav a{font:500 .9375rem/1 var(--sans);color:var(--ink-2);text-decoration:none;padding-block:10px}
+.nav a:hover{color:var(--deep)}
+.lang{display:flex;border:1px solid var(--rule);border-radius:3px;overflow:hidden;flex:none}
+.lang button{font:500 .8125rem/1 var(--mono);letter-spacing:.04em;padding:9px 10px;border:0;background:transparent;color:var(--ink-2);cursor:pointer}
+.lang button:hover{color:var(--deep)}
+.lang button[aria-pressed="true"]{background:var(--deep);color:var(--on-deep)}
+@media (max-width:900px){.nav a:not(.nav-contact){display:none}.nav{margin-right:0}}
+@media (max-width:440px){.brand-long{display:none}}
+
+/* Hero */
+.hero .wrap{display:flex;flex-direction:column;gap:24px;padding-block:clamp(48px,7vw,96px) clamp(48px,6vw,80px)}
+.display{font-size:clamp(2.5rem,1.5rem + 3.9vw,4rem);line-height:1.125;letter-spacing:-.012em;max-width:19ch}
+.tagline{font:italic 500 1.375rem/1.3 var(--serif);color:var(--current)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.neutral{max-width:62ch;padding-top:20px;border-top:1px solid var(--brass);color:var(--ink-2);font-size:.9375rem}
+.gauge{height:13px;background:
+  linear-gradient(var(--brass),var(--brass)) left bottom/100% 1px no-repeat,
+  repeating-linear-gradient(90deg,var(--brass) 0 1px,transparent 1px 120px) left bottom/100% 13px no-repeat,
+  repeating-linear-gradient(90deg,var(--rule) 0 1px,transparent 1px 24px) left bottom/100% 6px no-repeat}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 1rem/1 var(--sans);padding:14px 20px;border-radius:3px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--deep);color:var(--on-deep)}
+.btn-primary:hover{background:var(--current);color:var(--on-deep)}
+.btn-secondary{background:transparent;color:var(--deep);border-color:var(--deep)}
+.btn-secondary:hover{background:var(--mist);color:var(--deep)}
+.btn-light{background:var(--on-deep);color:var(--deep)}
+.btn-light:hover{background:var(--mist);color:var(--deep)}
+.btn-ghost{background:transparent;color:var(--on-deep);border-color:var(--deep-line)}
+.btn-ghost:hover{background:var(--deep-2);color:var(--on-deep)}
+
+/* Sections */
+.section{padding-block:clamp(56px,8vw,104px)}
+.band-bone{background:var(--bone)}
+.band-deep{background:var(--deep);color:var(--on-deep)}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+.intro{display:flex;flex-direction:column;gap:16px}
+
+/* About */
+.people{list-style:none;margin:0;padding:0;display:grid}
+.person{display:grid;gap:6px;padding-block:24px;border-top:1px solid var(--rule)}
+.person:last-child{border-bottom:1px solid var(--rule)}
+.person-name{font:500 1.5rem/1.3 var(--serif);color:var(--deep)}
+.person-line{color:var(--ink-2)}
+
+/* Services */
+.services h2{margin-bottom:40px}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+@media (max-width:860px){.service-grid{grid-template-columns:minmax(0,1fr)}}
+.service{display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:1px solid var(--brass)}
+.service svg{width:28px;height:28px;color:var(--deep)}
+.service p{color:var(--ink-2)}
+.notice{display:flex;gap:10px;align-items:flex-start;margin-top:40px;color:var(--ink-2);font-size:.9375rem;max-width:72ch}
+.notice svg{flex:none;width:18px;height:18px;margin-top:4px;color:var(--current)}
+.systems{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:28px}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font:500 .875rem/1.2 var(--sans);color:var(--deep);background:var(--fog);border:1px solid var(--rule);border-radius:2px;padding:7px 12px}
+
+/* AWG diagram */
+.awg .intro{margin-bottom:40px}
+.diagram{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;background:var(--fog);border:1px solid var(--rule);border-radius:4px;padding:clamp(20px,3vw,40px)}
+.diagram-art svg{display:block;width:100%;height:auto}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start}
+.step-n{width:26px;height:26px;border-radius:50%;background:var(--deep);color:var(--on-deep);font:500 .8125rem/26px var(--mono);text-align:center}
+.step-t{font-weight:600;color:var(--ink);line-height:1.4}
+.step-b{color:var(--ink-2);font-size:.9375rem;line-height:1.5}
+.diagram figcaption{grid-column:1/-1;font-size:.8125rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:12px}
+.limits{display:flex;gap:10px;align-items:flex-start;margin-top:24px;color:var(--ink-2);max-width:72ch}
+.limits svg{flex:none;width:18px;height:18px;margin-top:5px;color:var(--current)}
+@media (max-width:900px){.diagram{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:600px){
+  .diagram{margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));border-radius:0;border-inline:0;padding:16px 0 20px}
+  .diagram .steps,.diagram figcaption{margin-inline:20px}
+  .diagram-art{padding-inline:4px}
+}
+.dg-housing{fill:var(--ground);stroke:var(--deep);stroke-width:2}
+.dg-line{fill:none;stroke:var(--deep);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dg-pipe{fill:none;stroke:var(--deep);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.dg-coil{fill:none;stroke:var(--current);stroke-width:3;stroke-linejoin:round}
+.dg-thin{fill:none;stroke:var(--current);stroke-width:1.5;stroke-linecap:round}
+.dg-air{fill:none;stroke:var(--current);stroke-width:2;stroke-dasharray:5 6;stroke-linecap:round}
+.dg-head{fill:var(--current)}
+.dg-blade{fill:var(--current)}
+.dg-solid{fill:var(--deep)}
+.dg-module{fill:var(--fog);stroke:var(--deep);stroke-width:2}
+.dg-lamp{fill:var(--mist);stroke:var(--current);stroke-width:2}
+.dg-mineral{fill:var(--brass)}
+.dg-water{fill:var(--mist)}
+.dg-drop{fill:var(--current)}
+.dg-call circle{fill:var(--deep)}
+.dg-call text{fill:var(--on-deep);font:500 15px var(--mono);text-anchor:middle;dominant-baseline:central}
+.dg-text{fill:var(--deep);font:500 16px var(--sans)}
+.dg-sub{fill:var(--ink-2);font:400 15px var(--sans)}
+.dg-cap{fill:var(--ink-2);font:500 13px var(--mono);letter-spacing:.08em}
+.dg-mid{text-anchor:middle}
+
+/* Approach */
+.principles{list-style:none;margin:0;padding:0;display:grid}
+.principles li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-block:28px;border-top:1px solid var(--rule)}
+.principles li:last-child{border-bottom:1px solid var(--rule)}
+.principles svg{width:28px;height:28px;color:var(--current);margin-top:2px}
+.principles h3{margin-bottom:6px}
+.principles p{color:var(--ink-2);max-width:62ch}
+
+/* Contact */
+.band-deep h2{color:var(--on-deep)}
+.band-deep .body-l{color:var(--on-deep-2);margin-top:16px}
+.band-deep .label{color:var(--on-deep-2)}
+.band-deep :focus-visible{outline-color:var(--on-deep-2)}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:40px}
+@media (max-width:760px){.contact-grid{grid-template-columns:minmax(0,1fr)}}
+.contact-card{display:flex;flex-direction:column;gap:10px;padding:28px;border:1px solid var(--deep-line);border-radius:4px;min-width:0}
+.contact-name{font:500 1.375rem/1.3 var(--serif);color:var(--on-deep)}
+.email{font:400 1.0625rem/1.4 var(--mono);color:var(--on-deep);overflow-wrap:anywhere}
+.email a{color:inherit;text-decoration:none;border-bottom:1px solid var(--deep-line)}
+.email a:hover{color:var(--on-deep);border-bottom-color:var(--on-deep-2)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.based{display:flex;align-items:center;gap:8px;margin-top:32px;color:var(--on-deep-2);font-size:.9375rem}
+.based svg{width:18px;height:18px;flex:none}
+
+/* Footer */
+.site-footer .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding-block:48px}
+.footer-logo{width:109px;height:120px}
+.footer-text{display:flex;flex-direction:column;gap:6px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<!--LWCC:BODY-START-->
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="Living Water Corpus Christi, top of page" data-i18n-attr="aria-label:brandLabel">
+      <img class="brand-mark" src="assets/lwcc-mark.png" width="29" height="40" alt="">
+      <span class="brand-text" aria-hidden="true"><span class="brand-short">LWCC</span><span class="brand-long">Living Water Corpus Christi</span></span>
+    </a>
+    <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:navLabel">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#awg" data-i18n="navAwg">How it works</a>
+      <a href="#approach" data-i18n="navApproach">Approach</a>
+      <a href="#contact" class="nav-contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:langLabel">
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-es" data-lang="es" aria-pressed="false" lang="es">ES</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="mono-label" data-i18n="heroEyebrow">Corpus Christi, Texas · <span class="nowrap">27.80° N, 97.40° W</span></p>
+      <h1 class="display" data-i18n="heroTitle">Clean water systems for Coastal Bend homes and businesses.</h1>
+      <p class="tagline" data-i18n="tagline">Make your own water.</p>
+      <p class="body-l" data-i18n="heroLead">Living Water Corpus Christi (LWCC) designs, installs, and services water systems for homes, ranches, and businesses. We also run R&amp;D on more efficient ways to make and treat water.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="heroCta">Contact us</a>
+        <a class="btn btn-secondary" href="#awg" data-i18n="heroCta2">How an AWG works</a>
+      </div>
+      <p class="neutral" data-i18n="heroNeutral">We're not tied to one technology. If another approach suits you better, including one we don't sell, we'll tell you.</p>
+    </div>
+    <div class="gauge" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap split">
+      <div class="intro">
+        <h2 id="about-h" data-i18n="aboutTitle">Who we are</h2>
+        <p class="body-l" data-i18n="aboutBody">LWCC is a Corpus Christi company started by two co-founders who live here. One runs the business. The other runs the engineering.</p>
+        <p class="mono-label" data-i18n="aboutFacts">Founded 2026 · Corpus Christi, Texas</p>
+      </div>
+      <ul class="people">
+        <li class="person">
+          <p class="person-name">Nick Allen</p>
+          <p class="label" data-i18n="nickRole">CEO and Co-Founder</p>
+          <p class="person-line" data-i18n="nickLine">Runs the business: customers, operations, and partnerships.</p>
+        </li>
+        <li class="person">
+          <p class="person-name">Harry Hernandez Jr</p>
+          <p class="label" data-i18n="harryRole">CTO and Co-Founder</p>
+          <p class="person-line" data-i18n="harryLine">Runs engineering: system design, testing, and R&amp;D.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section services band-bone" id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <h2 id="services-h" data-i18n="servicesTitle">What we do</h2>
+      <div class="service-grid">
+        <article class="service">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          <h3 data-i18n="svcHomeTitle">Homes</h3>
+          <p data-i18n="svcHomeBody">Systems from drinking water up to whole-home supply. We size each one to the household and service it after it's running.</p>
+        </article>
+        <article class="service">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          <h3 data-i18n="svcBizTitle">Businesses and ranches</h3>
+          <p data-i18n="svcBizBody">Larger systems for restaurants, offices, ranches, and other commercial sites. We scope each project with you.</p>
+        </article>
+        <article class="service">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>
+          <h3 data-i18n="svcRdTitle">Research and development</h3>
+          <p data-i18n="svcRdBody">Applied R&amp;D on more efficient ways to generate and treat water, with field testing in Coastal Bend conditions.</p>
+        </article>
+      </div>
+      <p class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span data-i18n="plumberNote">Installs that connect to your plumbing are made by a licensed plumber. Wiring, where needed, is done by a licensed electrician.</span></p>
+      <div class="systems">
+        <p class="label" data-i18n="systemsLabel">Systems we work with</p>
+        <ul class="chips">
+          <li data-i18n="sys1">Atmospheric water generation</li>
+          <li data-i18n="sys2">Storage and backup supply</li>
+          <li data-i18n="sys3">Filtration, UV, and remineralization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section awg" id="awg" aria-labelledby="awg-h">
+    <div class="wrap">
+      <div class="intro">
+        <p class="label" data-i18n="awgEyebrow">One of the systems we work with</p>
+        <h2 id="awg-h" data-i18n="awgTitle">How an atmospheric water generator works</h2>
+        <p class="body-l" data-i18n="awgLead">An atmospheric water generator (AWG) makes water from the humidity in the air, the same way condensation forms on a cold glass.</p>
+      </div>
+      <figure class="diagram">
+        <div class="diagram-art">
+          <svg viewBox="0 0 560 360" role="img" aria-labelledby="dg-title dg-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="dg-title" data-i18n="dgTitle">Atmospheric water generator, generic diagram</title>
+            <desc id="dg-desc" data-i18n="dgDesc">Outside air enters the unit, passes a fan and a cold coil where water condenses, drips into a tray, runs through filter, UV and mineral stages, then flows to a storage tank and a tap. The unit runs on electricity.</desc>
+            <defs>
+              <marker id="dg-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="dg-head" d="M0 0 L10 5 L0 10 z"/></marker>
+              <clipPath id="dg-tank-clip"><rect x="381" y="151" width="88" height="138" rx="11"/></clipPath>
+            </defs>
+
+            <text class="dg-cap" x="100" y="16" data-i18n="dgUnit">AWG UNIT</text>
+            <rect class="dg-housing" x="100" y="24" width="230" height="280" rx="10"/>
+
+            <!-- inlet -->
+            <path class="dg-air" d="M16 66 H90" marker-end="url(#dg-arrow)"/>
+            <path class="dg-air" d="M16 82 H90" marker-end="url(#dg-arrow)"/>
+            <path class="dg-air" d="M16 98 H90" marker-end="url(#dg-arrow)"/>
+            <path class="dg-line" d="M100 60 H110 M100 72 H110 M100 84 H110 M100 96 H110 M100 108 H110"/>
+            <text class="dg-text" x="8" y="136"><tspan data-i18n="dgIn1">Humid</tspan><tspan x="8" dy="19" data-i18n="dgIn2">air in</tspan></text>
+
+            <!-- fan -->
+            <circle class="dg-line" cx="140" cy="82" r="20"/>
+            <g>
+              <ellipse class="dg-blade" cx="140" cy="72" rx="4.5" ry="9"/>
+              <ellipse class="dg-blade" cx="140" cy="72" rx="4.5" ry="9" transform="rotate(120 140 82)"/>
+              <ellipse class="dg-blade" cx="140" cy="72" rx="4.5" ry="9" transform="rotate(240 140 82)"/>
+              <circle class="dg-solid" cx="140" cy="82" r="3"/>
+            </g>
+            <path class="dg-air" d="M163 82 H174"/>
+
+            <!-- cold coil -->
+            <path class="dg-coil" d="M180 62 H300 V74 H180 V86 H300 V98 H180 V110 H300"/>
+
+            <!-- exhaust -->
+            <path class="dg-line" d="M320 70 H330 M320 82 H330 M320 94 H330"/>
+            <path class="dg-air" d="M304 82 H370" marker-end="url(#dg-arrow)"/>
+            <text class="dg-text" x="338" y="68" data-i18n="dgOut">Drier air out</text>
+
+            <!-- condensate -->
+            <path class="dg-drop" transform="translate(208 130)" d="M0 -8 C3 -3 6 0 6 3 A6 6 0 1 1 -6 3 C-6 0 -3 -3 0 -8 Z"/>
+            <path class="dg-drop" transform="translate(240 138)" d="M0 -8 C3 -3 6 0 6 3 A6 6 0 1 1 -6 3 C-6 0 -3 -3 0 -8 Z"/>
+            <path class="dg-drop" transform="translate(272 130)" d="M0 -8 C3 -3 6 0 6 3 A6 6 0 1 1 -6 3 C-6 0 -3 -3 0 -8 Z"/>
+
+            <!-- tray -->
+            <rect class="dg-module" x="176" y="150" width="116" height="14" rx="2"/>
+            <rect class="dg-water" x="178" y="156" width="112" height="6"/>
+            <path class="dg-pipe" d="M188 164 V186 H135 V204"/>
+
+            <!-- treatment train -->
+            <rect class="dg-module" x="112" y="204" width="46" height="56" rx="6"/>
+            <path class="dg-thin" d="M121 216 H149 M121 226 H149 M121 236 H149 M121 246 H149"/>
+            <rect class="dg-module" x="170" y="204" width="46" height="56" rx="6"/>
+            <rect class="dg-lamp" x="186" y="213" width="14" height="38" rx="7"/>
+            <rect class="dg-module" x="228" y="204" width="46" height="56" rx="6"/>
+            <circle class="dg-mineral" cx="240" cy="217" r="3"/><circle class="dg-mineral" cx="253" cy="225" r="3"/><circle class="dg-mineral" cx="263" cy="214" r="3"/>
+            <circle class="dg-mineral" cx="244" cy="238" r="3"/><circle class="dg-mineral" cx="259" cy="243" r="3"/><circle class="dg-mineral" cx="249" cy="251" r="3"/>
+            <path class="dg-pipe" d="M158 232 H170 M216 232 H228"/>
+            <text class="dg-sub dg-mid" x="135" y="281" data-i18n="dgFilter">Filter</text>
+            <text class="dg-sub dg-mid" x="193" y="281" data-i18n="dgUv">UV</text>
+            <text class="dg-sub dg-mid" x="251" y="281" data-i18n="dgMinerals">Minerals</text>
+
+            <!-- to storage -->
+            <path class="dg-pipe" d="M274 232 H380"/>
+            <rect class="dg-water" x="380" y="196" width="90" height="94" clip-path="url(#dg-tank-clip)"/>
+            <path class="dg-thin" d="M382 196 Q403 190 425 196 T468 196"/>
+            <rect class="dg-line" x="380" y="150" width="90" height="140" rx="12"/>
+            <text class="dg-sub dg-mid" x="425" y="314" data-i18n="dgTank">Tank</text>
+
+            <!-- to tap -->
+            <path class="dg-pipe" d="M470 272 H500 V200 H532 V212"/>
+            <path class="dg-pipe" d="M494 190 H506 M500 190 V200"/>
+            <path class="dg-drop" transform="translate(532 230)" d="M0 -8 C3 -3 6 0 6 3 A6 6 0 1 1 -6 3 C-6 0 -3 -3 0 -8 Z"/>
+            <text class="dg-sub dg-mid" x="500" y="314" data-i18n="dgTap">Tap</text>
+
+            <!-- power -->
+            <path class="dg-line" d="M120 304 V326 H66"/>
+            <rect class="dg-solid" x="50" y="319" width="16" height="14" rx="3"/>
+            <path class="dg-line" d="M44 323 H50 M44 329 H50"/>
+            <text class="dg-sub" x="130" y="331" data-i18n="dgPower">Power</text>
+
+            <!-- callouts -->
+            <g class="dg-call"><circle cx="140" cy="126" r="14"/><text x="140" y="126">1</text></g>
+            <g class="dg-call"><circle cx="240" cy="42" r="14"/><text x="240" y="42">2</text></g>
+            <g class="dg-call"><circle cx="314" cy="157" r="14"/><text x="314" y="157">3</text></g>
+            <g class="dg-call"><circle cx="252" cy="184" r="14"/><text x="252" y="184">4</text></g>
+            <g class="dg-call"><circle cx="425" cy="132" r="14"/><text x="425" y="132">5</text></g>
+            <g class="dg-call"><circle cx="536" cy="170" r="14"/><text x="536" y="170">6</text></g>
+          </svg>
+        </div>
+        <ol class="steps">
+          <li><span class="step-n" aria-hidden="true">1</span><div><p class="step-t" data-i18n="s1t">Air in</p><p class="step-b" data-i18n="s1b">A fan draws in outside air.</p></div></li>
+          <li><span class="step-n" aria-hidden="true">2</span><div><p class="step-t" data-i18n="s2t">Condense</p><p class="step-b" data-i18n="s2b">The air passes over a cold coil, and water vapor condenses on it.</p></div></li>
+          <li><span class="step-n" aria-hidden="true">3</span><div><p class="step-t" data-i18n="s3t">Collect</p><p class="step-b" data-i18n="s3b">Water drips into a collection tray.</p></div></li>
+          <li><span class="step-n" aria-hidden="true">4</span><div><p class="step-t" data-i18n="s4t">Treat</p><p class="step-b" data-i18n="s4b">It runs through filtration, UV light, and remineralization.</p></div></li>
+          <li><span class="step-n" aria-hidden="true">5</span><div><p class="step-t" data-i18n="s5t">Store</p><p class="step-b" data-i18n="s5b">Treated water is held in a storage tank.</p></div></li>
+          <li><span class="step-n" aria-hidden="true">6</span><div><p class="step-t" data-i18n="s6t">Use</p><p class="step-b" data-i18n="s6b">It goes to a tap or into your home's plumbing.</p></div></li>
+        </ol>
+        <figcaption data-i18n="awgCaption">Generic diagram. Components and their order vary by unit.</figcaption>
+      </figure>
+      <p class="limits"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span data-i18n="awgLimits">Output depends on humidity and temperature. It's highest when the air is warm and humid and lower when the air is cool or dry. The unit runs on electricity.</span></p>
+    </div>
+  </section>
+
+  <section class="section band-bone" id="approach" aria-labelledby="approach-h">
+    <div class="wrap split">
+      <div class="intro">
+        <h2 id="approach-h" data-i18n="approachTitle">How we work</h2>
+      </div>
+      <ul class="principles">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+          <div><h3 data-i18n="p1t">Not tied to one technology</h3><p data-i18n="p1b">We start with your site and what you need, then choose the approach. If something we don't sell fits better, we'll say so.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg>
+          <div><h3 data-i18n="p2t">Limits up front</h3><p data-i18n="p2b">Every water system trades off output, energy use, upkeep, and cost. We go over those trade-offs with you before you decide.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <div><h3 data-i18n="p3t">Service after the install</h3><p data-i18n="p3b">Systems need regular upkeep to keep working as designed: filters, UV lamps, and performance checks. We handle it.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section band-deep" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h" data-i18n="contactTitle">Contact</h2>
+      <p class="body-l" data-i18n="contactLead">We work by email. Pick the inbox that fits your question.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p class="label" data-i18n="c1Label">General questions</p>
+          <p class="contact-name">Nick Allen, <span data-i18n="c1Role">CEO</span></p>
+          <p class="email" id="email-nick"><a class="email-link" data-u="nick" data-d="livingwatercorpuschristi.com" data-subject="subj1">nick [at] livingwatercorpuschristi [dot] com</a></p>
+          <div class="contact-actions">
+            <a class="btn btn-light email-btn" data-u="nick" data-d="livingwatercorpuschristi.com" data-subject="subj1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span data-i18n="c1Btn">Email Nick</span></a>
+            <button type="button" class="btn btn-ghost copy" id="copy-nick" data-u="nick" data-d="livingwatercorpuschristi.com" aria-describedby="email-nick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span class="copy-label" data-i18n="copy">Copy address</span></button>
+          </div>
+        </div>
+        <div class="contact-card">
+          <p class="label" data-i18n="c2Label">Sales and engineering</p>
+          <p class="contact-name">Harry Hernandez Jr, <span data-i18n="c2Role">CTO</span></p>
+          <p class="email" id="email-harry"><a class="email-link" data-u="harry" data-d="livingwatercorpuschristi.com" data-subject="subj2">harry [at] livingwatercorpuschristi [dot] com</a></p>
+          <div class="contact-actions">
+            <a class="btn btn-light email-btn" data-u="harry" data-d="livingwatercorpuschristi.com" data-subject="subj2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span data-i18n="c2Btn">Email Harry</span></a>
+            <button type="button" class="btn btn-ghost copy" id="copy-harry" data-u="harry" data-d="livingwatercorpuschristi.com" aria-describedby="email-harry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span class="copy-label" data-i18n="copy">Copy address</span></button>
+          </div>
+        </div>
+      </div>
+      <p class="based"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="based">Based in Corpus Christi, Texas.</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img class="footer-logo" src="assets/lwcc-logo.png" width="109" height="120" alt="Living Water Corpus Christi logo" data-i18n-attr="alt:logoAlt">
+    <div class="footer-text">
+      <p class="tagline" data-i18n="tagline">Make your own water.</p>
+      <p class="small">© 2026 Living Water Corpus Christi, LLC</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ES = {"skip": "Saltar al contenido", "brandLabel": "Living Water Corpus Christi, inicio de la página", "navLabel": "Principal", "navAbout": "Nosotros", "navServices": "Servicios", "navAwg": "Cómo funciona", "navApproach": "Cómo trabajamos", "navContact": "Contacto", "langLabel": "Idioma", "heroEyebrow": "Corpus Christi, Texas · <span class=\"nowrap\">27.80° N, 97.40° O</span>", "heroTitle": "Sistemas de agua limpia para hogares y negocios del Coastal Bend.", "tagline": "Produzca su propia agua.", "heroLead": "Living Water Corpus Christi (LWCC) diseña, instala y da mantenimiento a sistemas de agua para hogares, ranchos y negocios. También hacemos investigación y desarrollo para producir y tratar agua de forma más eficiente.", "heroCta": "Contáctenos", "heroCta2": "Cómo funciona un AWG", "heroNeutral": "No estamos atados a una sola tecnología. Si otra opción le conviene más, aunque no la vendamos, se lo diremos.", "aboutTitle": "Quiénes somos", "aboutBody": "LWCC es una empresa de Corpus Christi creada por dos socios que viven aquí. Uno dirige el negocio y el otro, la ingeniería.", "aboutFacts": "Fundada en 2026 · Corpus Christi, Texas", "nickRole": "CEO y cofundador", "nickLine": "Dirige el negocio: clientes, operaciones y alianzas.", "harryRole": "CTO y cofundador", "harryLine": "Dirige la ingeniería: diseño de sistemas, pruebas e investigación y desarrollo.", "servicesTitle": "Qué hacemos", "svcHomeTitle": "Hogares", "svcHomeBody": "Sistemas desde agua para beber hasta suministro para toda la casa. Dimensionamos cada uno según el hogar y le damos mantenimiento una vez en marcha.", "svcBizTitle": "Negocios y ranchos", "svcBizBody": "Sistemas más grandes para restaurantes, oficinas, ranchos y otros sitios comerciales. Definimos cada proyecto con usted.", "svcRdTitle": "Investigación y desarrollo", "svcRdBody": "Investigación aplicada para generar y tratar agua de forma más eficiente, con pruebas de campo en las condiciones del Coastal Bend.", "plumberNote": "Las instalaciones que se conectan a su plomería las realiza un plomero con licencia. Cuando se necesita cableado, lo hace un electricista con licencia.", "systemsLabel": "Sistemas con los que trabajamos", "sys1": "Generación de agua atmosférica", "sys2": "Almacenamiento y suministro de respaldo", "sys3": "Filtración, UV y remineralización", "awgEyebrow": "Uno de los sistemas con los que trabajamos", "awgTitle": "Cómo funciona un generador de agua atmosférica", "awgLead": "Un generador de agua atmosférica (AWG, por sus siglas en inglés) produce agua a partir de la humedad del aire, igual que se forma condensación en un vaso frío.", "dgTitle": "Generador de agua atmosférica, diagrama genérico", "dgDesc": "El aire exterior entra al equipo, pasa por un ventilador y un serpentín frío donde el agua se condensa, cae en una bandeja, pasa por etapas de filtro, UV y minerales, y luego fluye a un tanque de almacenamiento y a una llave. El equipo funciona con electricidad.", "dgUnit": "EQUIPO AWG", "dgIn1": "Entra aire", "dgIn2": "húmedo", "dgOut": "Sale aire más seco", "dgFilter": "Filtro", "dgUv": "UV", "dgMinerals": "Minerales", "dgTank": "Tanque", "dgTap": "Llave", "dgPower": "Electricidad", "s1t": "Entrada de aire", "s1b": "Un ventilador toma aire del exterior.", "s2t": "Condensación", "s2b": "El aire pasa por un serpentín frío y el vapor de agua se condensa en él.", "s3t": "Recolección", "s3b": "El agua cae en una bandeja colectora.", "s4t": "Tratamiento", "s4b": "Pasa por filtración, luz UV y remineralización.", "s5t": "Almacenamiento", "s5b": "El agua tratada se guarda en un tanque.", "s6t": "Uso", "s6b": "Llega a una llave o a la plomería de su casa.", "awgCaption": "Diagrama genérico. Los componentes y su orden varían según el equipo.", "awgLimits": "La producción depende de la humedad y la temperatura. Es mayor cuando el aire está cálido y húmedo, y menor cuando está fresco o seco. El equipo funciona con electricidad.", "approachTitle": "Cómo trabajamos", "p1t": "Sin atarnos a una sola tecnología", "p1b": "Empezamos por su sitio y lo que necesita, y luego elegimos el enfoque. Si algo que no vendemos le conviene más, se lo diremos.", "p2t": "Los límites, por adelantado", "p2b": "Todo sistema de agua implica un equilibrio entre producción, consumo de energía, mantenimiento y costo. Revisamos esos puntos con usted antes de que decida.", "p3t": "Mantenimiento después de la instalación", "p3b": "Los sistemas necesitan mantenimiento regular para seguir funcionando como se diseñaron: filtros, lámparas UV y revisiones de rendimiento. Nosotros nos encargamos.", "contactTitle": "Contacto", "contactLead": "Trabajamos por correo electrónico. Elija el buzón que corresponda a su pregunta.", "c1Label": "Preguntas generales", "c1Role": "CEO", "c1Btn": "Escribir a Nick", "copy": "Copiar dirección", "c2Label": "Ventas e ingeniería", "c2Role": "CTO", "c2Btn": "Escribir a Harry", "based": "Con sede en Corpus Christi, Texas.", "logoAlt": "Logotipo de Living Water Corpus Christi"};
+  var SUBJECTS = {
+    en: { subj1: "General question", subj2: "Sales or engineering question" },
+    es: { subj1: "Pregunta general", subj2: "Pregunta de ventas o ingeniería" }
+  };
+  var COPIED = { en: "Copied", es: "Copiado" };
+  var current = "en";
+
+  var textNodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
+  var EN = {};
+  textNodes.forEach(function (el) {
+    var k = el.getAttribute("data-i18n");
+    if (!(k in EN)) EN[k] = (el instanceof SVGElement) ? el.textContent : el.innerHTML;
+  });
+  var attrRecords = [];
+  Array.prototype.forEach.call(document.querySelectorAll("[data-i18n-attr]"), function (el) {
+    el.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
+      var p = pair.split(":");
+      attrRecords.push({ el: el, attr: p[0], key: p[1], en: el.getAttribute(p[0]) });
+    });
+  });
+
+  function address(el) { return el.getAttribute("data-u") + "@" + el.getAttribute("data-d"); }
+
+  function setEmails(lang) {
+    Array.prototype.forEach.call(document.querySelectorAll(".email-link, .email-btn"), function (el) {
+      var subject = SUBJECTS[lang][el.getAttribute("data-subject")] || "";
+      el.setAttribute("href", "mailto:" + address(el) + (subject ? "?subject=" + encodeURIComponent(subject) : ""));
+      if (el.classList.contains("email-link")) el.textContent = address(el);
+    });
+  }
+
+  function apply(lang) {
+    current = lang === "es" ? "es" : "en";
+    var dict = current === "es" ? ES : EN;
+    textNodes.forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      var v = dict[k] != null ? dict[k] : EN[k];
+      if (el instanceof SVGElement) el.textContent = v; else el.innerHTML = v;
+    });
+    attrRecords.forEach(function (r) {
+      var v = current === "es" && ES[r.key] != null ? ES[r.key] : r.en;
+      if (v != null) r.el.setAttribute(r.attr, v);
+    });
+    document.documentElement.lang = current;
+    Array.prototype.forEach.call(document.querySelectorAll("[data-lang]"), function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === current));
+    });
+    setEmails(current);
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-lang]"), function (b) {
+    b.addEventListener("click", function () {
+      apply(b.getAttribute("data-lang"));
+      try { localStorage.setItem("lwcc-lang", current); } catch (e) {}
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll(".copy"), function (btn) {
+    btn.addEventListener("click", function () {
+      var label = btn.querySelector(".copy-label");
+      var target = document.getElementById(btn.getAttribute("aria-describedby"));
+      function selectText() {
+        try {
+          var range = document.createRange();
+          range.selectNodeContents(target);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+        } catch (e) {}
+      }
+      function done() {
+        label.textContent = COPIED[current];
+        setTimeout(function () { label.innerHTML = current === "es" ? ES.copy : EN.copy; }, 2000);
+      }
+      try {
+        navigator.clipboard.writeText(address(btn)).then(done, selectText);
+      } catch (e) { selectText(); }
+    });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem("lwcc-lang"); } catch (e) {}
+  var browser = ((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase();
+  apply(saved || (browser.indexOf("es") === 0 ? "es" : "en"));
+})();
+</script>
+<!--LWCC:BODY-END-->
+</body>
+</html>
